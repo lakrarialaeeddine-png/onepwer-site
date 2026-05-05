@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>إتمام الطلب - OnePower</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="checkout-page">
+
+<header class="top-header">
+  <a href="index.html" class="logo">
+    <span class="logo-icon">👓</span>
+    <strong>OnePower</strong>
+  </a>
+
+  <a href="index.html" class="top-btn light-btn">العودة</a>
+</header>
+
+<section class="checkout-wrapper">
+
+  <div class="checkout-card">
+
+    <div class="checkout-title">
+      <h1>إتمام الطلب</h1>
+      <p>املأ المعلومات وسيتم الاتصال بك لتأكيد الطلب</p>
+    </div>
+
+    <div class="order-summary">
+      <img src="product.jpg" alt="OnePower" />
+
+      <div>
+        <h3>نظارات One Power</h3>
+        <p>الدفع عند الاستلام</p>
+        <strong>ابتداءً من 199 درهم</strong>
+      </div>
+    </div>
+
+    <form id="orderForm" class="order-form">
+
+      <label>الاسم الكامل</label>
+      <input type="text" id="name" placeholder="مثال: محمد أمين" required />
+
+      <label>رقم الهاتف</label>
+      <input type="tel" id="phone" placeholder="06XXXXXXXX" required />
+
+      <label>المدينة</label>
+<input type="text" id="city" placeholder="اكتب مدينتك" required />
+
+      <label>العرض</label>
+<select id="qty" required>
+  <option value="1">1 قطعة - 199 درهم</option>
+  <option value="2">2 قطع - 398 درهم 🔥</option>
+  <option value="3">3 قطع - 597 درهم 🔥🔥</option>
+</select>
+
+      <div class="checkout-total" id="total">
+        المجموع: 199 درهم
+      </div>
+
+      <div class="checkout-trust">
+        ✔ الدفع عند الاستلام <br />
+        ✔ توصيل سريع <br />
+        ✔ سيتم الاتصال بك لتأكيد الطلب
+      </div>
+
+      <button type="submit" class="submit-btn">
+        تأكيد الطلب الآن
+      </button>
+
+    </form>
+
+  </div>
+
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>
